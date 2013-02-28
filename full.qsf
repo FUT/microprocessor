@@ -72,3 +72,5 @@ set_global_assignment -name BDF_FILE special_register.bdf
 set_global_assignment -name BDF_FILE special_registers.bdf
 set_global_assignment -name BDF_FILE address_register.bdf
 set_global_assignment -name BDF_FILE data_register.bdf
+set_global_assignment -name BDF_FILE register16.bdf
+set_global_assignment -name BDF_FILE register14.bdf
