@@ -1,0 +1,155 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 312 272)
+	(text "IF" (rect 5 0 14 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "run" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "run" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 21 43 50 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "should_have_jumped" (rect 0 0 120 14)(font "Arial" (font_size 8)))
+		(text "should_have_jumped" (rect 21 59 141 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "jump_predicted" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "jump_predicted" (rect 21 75 107 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clr" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "clr" (rect 21 91 35 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "instruction[39..0]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "instruction[39..0]" (rect 21 107 115 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "ready" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "ready" (rect 242 27 275 41)(font "Arial" (font_size 8)))
+		(line (pt 296 32)(pt 280 32)(line_width 1))
+	)
+	(port
+		(pt 296 96)
+		(output)
+		(text "_ICB[15..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "_ICB[15..0]" (rect 214 91 275 105)(font "Arial" (font_size 8)))
+		(line (pt 296 96)(pt 280 96)(line_width 3))
+	)
+	(port
+		(pt 296 112)
+		(output)
+		(text "T_stored_prediction" (rect 0 0 113 14)(font "Arial" (font_size 8)))
+		(text "T_stored_prediction" (rect 162 107 275 121)(font "Arial" (font_size 8)))
+		(line (pt 296 112)(pt 280 112)(line_width 1))
+	)
+	(port
+		(pt 296 128)
+		(output)
+		(text "T_to_i_address[13..0]" (rect 0 0 123 14)(font "Arial" (font_size 8)))
+		(text "T_to_i_address[13..0]" (rect 152 123 275 137)(font "Arial" (font_size 8)))
+		(line (pt 296 128)(pt 280 128)(line_width 3))
+	)
+	(port
+		(pt 296 144)
+		(output)
+		(text "i_address[13..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "i_address[13..0]" (rect 183 139 275 153)(font "Arial" (font_size 8)))
+		(line (pt 296 144)(pt 280 144)(line_width 3))
+	)
+	(port
+		(pt 296 160)
+		(output)
+		(text "T_prediction_out" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "T_prediction_out" (rect 181 155 275 169)(font "Arial" (font_size 8)))
+		(line (pt 296 160)(pt 280 160)(line_width 1))
+	)
+	(port
+		(pt 296 176)
+		(output)
+		(text "T_next_addr[13..0]" (rect 0 0 107 14)(font "Arial" (font_size 8)))
+		(text "T_next_addr[13..0]" (rect 168 171 275 185)(font "Arial" (font_size 8)))
+		(line (pt 296 176)(pt 280 176)(line_width 3))
+	)
+	(port
+		(pt 296 192)
+		(output)
+		(text "T_jump_addr[13..0]" (rect 0 0 108 14)(font "Arial" (font_size 8)))
+		(text "T_jump_addr[13..0]" (rect 167 187 275 201)(font "Arial" (font_size 8)))
+		(line (pt 296 192)(pt 280 192)(line_width 3))
+	)
+	(port
+		(pt 296 208)
+		(output)
+		(text "T_it_was_jump" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "T_it_was_jump" (rect 189 203 275 217)(font "Arial" (font_size 8)))
+		(line (pt 296 208)(pt 280 208)(line_width 1))
+	)
+	(port
+		(pt 296 48)
+		(bidir)
+		(text "CB[15..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "CB[15..0]" (rect 224 43 275 57)(font "Arial" (font_size 8)))
+		(line (pt 296 48)(pt 280 48)(line_width 3))
+	)
+	(port
+		(pt 296 64)
+		(bidir)
+		(text "AB[13..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "AB[13..0]" (rect 222 59 275 73)(font "Arial" (font_size 8)))
+		(line (pt 296 64)(pt 280 64)(line_width 3))
+	)
+	(port
+		(pt 296 80)
+		(bidir)
+		(text "DB[15..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "DB[15..0]" (rect 224 75 275 89)(font "Arial" (font_size 8)))
+		(line (pt 296 80)(pt 280 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 240)(line_width 1))
+	)
+)
