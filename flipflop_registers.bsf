@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 192 144)
+	(rect 16 16 168 144)
 	(text "flipflop_registers" (rect 5 0 100 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -52,20 +52,13 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
-		(pt 176 32)
+		(pt 152 32)
 		(output)
 		(text "out[63..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "out[63..0]" (rect 102 27 155 41)(font "Arial" (font_size 8)))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
-	)
-	(port
-		(pt 176 48)
-		(output)
-		(text "should_work" (rect 0 0 74 14)(font "Arial" (font_size 8)))
-		(text "should_work" (rect 81 43 155 57)(font "Arial" (font_size 8)))
-		(line (pt 176 48)(pt 160 48)(line_width 1))
+		(text "out[63..0]" (rect 78 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 160 112)(line_width 1))
+		(rectangle (rect 16 16 136 112)(line_width 1))
 	)
 )
