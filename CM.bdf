@@ -166,7 +166,7 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 2112 2504 2288 2520)
+	(rect 2112 1912 2288 1928)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "CB[15..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
@@ -183,7 +183,7 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 2112 2520 2288 2536)
+	(rect 2112 1928 2288 1944)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "AB[13..0]" (rect 90 0 136 12)(font "Arial" ))
 	(pt 0 8)
@@ -200,7 +200,7 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 2112 2536 2288 2552)
+	(rect 2112 1944 2288 1960)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "DB[15..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
@@ -1147,21 +1147,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2112 2544)
-	(pt 2000 2544)
-	(bus)
-)
-(connector
-	(pt 2112 2528)
-	(pt 2016 2528)
-	(bus)
-)
-(connector
-	(pt 2112 2512)
-	(pt 2032 2512)
-	(bus)
-)
-(connector
 	(text "p[2]" (rect 840 1488 858 1500)(font "Arial" ))
 	(pt 896 1504)
 	(pt 832 1504)
@@ -1330,36 +1315,6 @@ applicable agreement for further details.
 	(pt 1480 1536)
 )
 (connector
-	(pt 2032 1136)
-	(pt 2032 1504)
-	(bus)
-)
-(connector
-	(pt 2032 1504)
-	(pt 2032 2512)
-	(bus)
-)
-(connector
-	(pt 2016 1152)
-	(pt 2016 1520)
-	(bus)
-)
-(connector
-	(pt 2016 1520)
-	(pt 2016 2528)
-	(bus)
-)
-(connector
-	(pt 2000 1168)
-	(pt 2000 1536)
-	(bus)
-)
-(connector
-	(pt 2000 1536)
-	(pt 2000 2544)
-	(bus)
-)
-(connector
 	(pt 1984 1184)
 	(pt 1984 1552)
 	(bus)
@@ -1402,6 +1357,51 @@ applicable agreement for further details.
 (connector
 	(pt 1688 1568)
 	(pt 1968 1568)
+	(bus)
+)
+(connector
+	(pt 2112 1952)
+	(pt 2000 1952)
+	(bus)
+)
+(connector
+	(pt 2112 1936)
+	(pt 2016 1936)
+	(bus)
+)
+(connector
+	(pt 2112 1920)
+	(pt 2032 1920)
+	(bus)
+)
+(connector
+	(pt 2000 1168)
+	(pt 2000 1536)
+	(bus)
+)
+(connector
+	(pt 2000 1536)
+	(pt 2000 1952)
+	(bus)
+)
+(connector
+	(pt 2016 1152)
+	(pt 2016 1520)
+	(bus)
+)
+(connector
+	(pt 2016 1520)
+	(pt 2016 1936)
+	(bus)
+)
+(connector
+	(pt 2032 1136)
+	(pt 2032 1504)
+	(bus)
+)
+(connector
+	(pt 2032 1504)
+	(pt 2032 1920)
 	(bus)
 )
 (junction (pt 872 200))
