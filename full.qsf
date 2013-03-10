@@ -50,6 +50,11 @@ set_global_assignment -name INCREMENTAL_COMPILATION FULL_INCREMENTAL_COMPILATION
 set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT FAST
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE RAM.vwf
 set_global_assignment -name BDF_FILE full.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE full.vwf
 set_global_assignment -name HEX_FILE instructions_40.hex
@@ -57,6 +62,7 @@ set_global_assignment -name BDF_FILE IF.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE IF.vwf
 set_global_assignment -name HEX_FILE IF_internal_48.hex
 set_global_assignment -name BDF_FILE OF.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE OF.vwf
 set_global_assignment -name BDF_FILE EXEC.bdf
 set_global_assignment -name BDF_FILE WRITE.bdf
 set_global_assignment -name BDF_FILE register.bdf
@@ -66,12 +72,14 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE iterator.vwf
 set_global_assignment -name BDF_FILE internal_bus.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE internal_bus.vwf
 set_global_assignment -name BDF_FILE RAM.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RAM.vwf
 set_global_assignment -name HEX_FILE RAM_16.hex
 set_global_assignment -name BDF_FILE RCM.bdf
 set_global_assignment -name BDF_FILE special_register.bdf
 set_global_assignment -name BDF_FILE special_registers.bdf
 set_global_assignment -name BDF_FILE address_register.bdf
 set_global_assignment -name BDF_FILE data_register.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE stack.vwf
 set_global_assignment -name BDF_FILE register16.bdf
 set_global_assignment -name BDF_FILE register14.bdf
 set_global_assignment -name BDF_FILE CM.bdf
@@ -88,12 +96,4 @@ set_global_assignment -name BDF_FILE cache_lines.bdf
 set_global_assignment -name BDF_FILE cache_line.bdf
 set_global_assignment -name BDF_FILE stack.bdf
 set_global_assignment -name HEX_FILE stack.hex
-set_global_assignment -name VECTOR_WAVEFORM_FILE stack.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE OF.vwf
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE RAM.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE RAM.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

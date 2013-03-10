@@ -439,7 +439,7 @@ applicable agreement for further details.
 		(type "PARAMETER_STRING")	)
 	(parameter
 		"LPM_FILE"
-		"RAM.hex"
+		"RAM_16.hex"
 		"File containing initial contents of memory array"
 		(type "PARAMETER_STRING")	)
 	(parameter
@@ -467,7 +467,7 @@ applicable agreement for further details.
 	)
 	(parameter
 		"LPM_WIDTHAD"
-		"14"
+		"12"
 		"Number of address lines, any integer > 0"
 		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
 	)
@@ -481,11 +481,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 1168 16 1400 128))
 )
 (connector
-	(pt 1032 424)
-	(pt 1032 232)
-	(bus)
-)
-(connector
 	(pt 1040 232)
 	(pt 1032 232)
 	(bus)
@@ -497,11 +492,6 @@ applicable agreement for further details.
 (connector
 	(pt 968 168)
 	(pt 952 168)
-)
-(connector
-	(pt 1168 200)
-	(pt 1232 200)
-	(bus)
 )
 (connector
 	(pt 1232 200)
@@ -523,16 +513,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1328 312)
-	(pt 1328 392)
-)
-(connector
 	(pt 1200 312)
 	(pt 1160 312)
-)
-(connector
-	(pt 1160 312)
-	(pt 1160 392)
 )
 (connector
 	(pt 1232 384)
@@ -562,10 +544,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 720 184)
-	(pt 952 184)
-)
-(connector
 	(text "CB[0]" (rect 728 286 740 314)(font "Arial" )(vertical))
 	(pt 728 280)
 	(pt 728 344)
@@ -577,10 +555,6 @@ applicable agreement for further details.
 (connector
 	(pt 1320 456)
 	(pt 1320 512)
-)
-(connector
-	(pt 728 512)
-	(pt 1168 512)
 )
 (connector
 	(pt 1168 512)
@@ -596,11 +570,6 @@ applicable agreement for further details.
 	(pt 432 528)
 )
 (connector
-	(pt 296 424)
-	(pt 432 424)
-	(bus)
-)
-(connector
 	(pt 520 512)
 	(pt 536 512)
 )
@@ -612,11 +581,6 @@ applicable agreement for further details.
 (connector
 	(pt 432 424)
 	(pt 520 424)
-	(bus)
-)
-(connector
-	(pt 520 424)
-	(pt 1032 424)
 	(bus)
 )
 (connector
@@ -638,10 +602,6 @@ applicable agreement for further details.
 (connector
 	(pt 1336 456)
 	(pt 1336 520)
-)
-(connector
-	(pt 712 520)
-	(pt 1152 520)
 )
 (connector
 	(pt 1152 520)
@@ -678,6 +638,53 @@ applicable agreement for further details.
 	(pt 728 344)
 	(bus)
 )
+(connector
+	(pt 1160 312)
+	(pt 1160 392)
+)
+(connector
+	(text "AB[13..0]" (rect 364 408 410 420)(font "Arial" ))
+	(pt 296 424)
+	(pt 432 424)
+	(bus)
+)
+(connector
+	(pt 520 424)
+	(pt 1032 424)
+	(bus)
+)
+(connector
+	(pt 1032 424)
+	(pt 1064 424)
+	(bus)
+)
+(connector
+	(text "AB[11..0]" (rect 1016 305 1028 351)(font "Arial" )(vertical))
+	(pt 1032 424)
+	(pt 1032 232)
+	(bus)
+)
+(connector
+	(pt 720 184)
+	(pt 952 184)
+)
+(connector
+	(pt 728 512)
+	(pt 1168 512)
+)
+(connector
+	(pt 712 520)
+	(pt 1152 520)
+)
+(connector
+	(pt 1328 312)
+	(pt 1328 392)
+)
+(connector
+	(pt 1168 200)
+	(pt 1232 200)
+	(bus)
+)
 (junction (pt 1232 384))
 (junction (pt 952 184))
 (junction (pt 432 424))
@@ -687,6 +694,7 @@ applicable agreement for further details.
 (junction (pt 712 520))
 (junction (pt 1152 520))
 (junction (pt 952 200))
+(junction (pt 1032 424))
 (text "IS RAM ADDRESS ON BUS" (rect 448 568 600 582)(font "Arial" (font_size 8)))
 (text "WRITE" (rect 752 248 788 262)(font "Arial" (font_size 8)))
 (text "READ" (rect 1096 424 1129 438)(font "Arial" (font_size 8)))
