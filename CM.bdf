@@ -737,7 +737,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 216 160 408 208))
 )
 (symbol
-	(rect 1464 1104 1704 1264)
+	(rect 1616 1104 1856 1264)
 	(text "EXEC" (rect 5 0 35 14)(font "Arial" (font_size 8)))
 	(text "inst19" (rect 8 144 37 156)(font "Arial" ))
 	(port
@@ -1177,66 +1177,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1984 1184)
-	(pt 1704 1184)
-	(bus)
-)
-(connector
-	(pt 1968 1200)
-	(pt 1704 1200)
-	(bus)
-)
-(connector
-	(text "p[0]" (rect 1408 1152 1426 1164)(font "Arial" ))
-	(pt 1400 1168)
-	(pt 1464 1168)
-)
-(connector
-	(pt 1848 1216)
-	(pt 1704 1216)
-	(bus)
-)
-(connector
-	(pt 1848 1376)
-	(pt 1848 1216)
-	(bus)
-)
-(connector
-	(pt 2032 1136)
-	(pt 1704 1136)
-	(bus)
-)
-(connector
-	(pt 2016 1152)
-	(pt 1704 1152)
-	(bus)
-)
-(connector
-	(pt 2000 1168)
-	(pt 1704 1168)
-	(bus)
-)
-(connector
-	(pt 2032 568)
-	(pt 2032 1136)
-	(bus)
-)
-(connector
-	(pt 2016 584)
-	(pt 2016 1152)
-	(bus)
-)
-(connector
-	(pt 2000 600)
-	(pt 2000 1168)
-	(bus)
-)
-(connector
-	(text "clk" (rect 1408 1136 1422 1148)(font "Arial" ))
-	(pt 1400 1152)
-	(pt 1464 1152)
-)
-(connector
 	(text "p[2]" (rect 832 1120 850 1132)(font "Arial" ))
 	(pt 888 1136)
 	(pt 824 1136)
@@ -1252,23 +1192,12 @@ applicable agreement for further details.
 	(pt 824 1184)
 )
 (connector
-	(text "<<__$DEF_ALIAS1143>>" (rect 1278 1120 1401 1132)(font "Arial" )(invisible))
-	(pt 1040 1136)
-	(pt 1464 1136)
-	(bus)
-)
-(connector
 	(pt 896 1520)
 	(pt 760 1520)
 	(bus)
 )
 (connector
 	(pt 760 1520)
-	(pt 760 1376)
-	(bus)
-)
-(connector
-	(pt 1848 1376)
 	(pt 760 1376)
 	(bus)
 )
@@ -1315,26 +1244,6 @@ applicable agreement for further details.
 	(pt 1480 1536)
 )
 (connector
-	(pt 1984 1184)
-	(pt 1984 1552)
-	(bus)
-)
-(connector
-	(pt 1984 1552)
-	(pt 1984 1656)
-	(bus)
-)
-(connector
-	(pt 1968 1200)
-	(pt 1968 1568)
-	(bus)
-)
-(connector
-	(pt 1968 1568)
-	(pt 1968 1656)
-	(bus)
-)
-(connector
 	(pt 1688 1552)
 	(pt 1984 1552)
 	(bus)
@@ -1375,18 +1284,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2000 1168)
-	(pt 2000 1536)
-	(bus)
-)
-(connector
 	(pt 2000 1536)
 	(pt 2000 1952)
-	(bus)
-)
-(connector
-	(pt 2016 1152)
-	(pt 2016 1520)
 	(bus)
 )
 (connector
@@ -1395,13 +1294,114 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt 2032 1504)
+	(pt 2032 1920)
+	(bus)
+)
+(connector
+	(pt 760 1376)
+	(pt 1904 1376)
+	(bus)
+)
+(connector
+	(pt 1984 1184)
+	(pt 1856 1184)
+	(bus)
+)
+(connector
+	(pt 1968 1200)
+	(pt 1856 1200)
+	(bus)
+)
+(connector
+	(text "p[0]" (rect 1560 1152 1578 1164)(font "Arial" ))
+	(pt 1552 1168)
+	(pt 1616 1168)
+)
+(connector
+	(pt 2032 1136)
+	(pt 1856 1136)
+	(bus)
+)
+(connector
+	(pt 2016 1152)
+	(pt 1856 1152)
+	(bus)
+)
+(connector
+	(pt 2000 1168)
+	(pt 1856 1168)
+	(bus)
+)
+(connector
+	(text "clk" (rect 1560 1136 1574 1148)(font "Arial" ))
+	(pt 1552 1152)
+	(pt 1616 1152)
+)
+(connector
+	(pt 1904 1216)
+	(pt 1856 1216)
+	(bus)
+)
+(connector
+	(pt 1904 1376)
+	(pt 1904 1216)
+	(bus)
+)
+(connector
+	(pt 2032 568)
+	(pt 2032 1136)
+	(bus)
+)
+(connector
 	(pt 2032 1136)
 	(pt 2032 1504)
 	(bus)
 )
 (connector
-	(pt 2032 1504)
-	(pt 2032 1920)
+	(pt 2016 584)
+	(pt 2016 1152)
+	(bus)
+)
+(connector
+	(pt 2016 1152)
+	(pt 2016 1520)
+	(bus)
+)
+(connector
+	(pt 2000 600)
+	(pt 2000 1168)
+	(bus)
+)
+(connector
+	(pt 2000 1168)
+	(pt 2000 1536)
+	(bus)
+)
+(connector
+	(pt 1984 1184)
+	(pt 1984 1552)
+	(bus)
+)
+(connector
+	(pt 1984 1552)
+	(pt 1984 1656)
+	(bus)
+)
+(connector
+	(pt 1968 1200)
+	(pt 1968 1568)
+	(bus)
+)
+(connector
+	(pt 1968 1568)
+	(pt 1968 1656)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS1143>>" (rect 1430 1120 1553 1132)(font "Arial" )(invisible))
+	(pt 1040 1136)
+	(pt 1616 1136)
 	(bus)
 )
 (junction (pt 872 200))
@@ -1421,11 +1421,11 @@ applicable agreement for further details.
 (junction (pt 1984 1552))
 (junction (pt 1968 1568))
 (text "PREDICTION" (rect 712 584 780 598)(font "Arial" (font_size 8)))
-(text "EXECUTE STAGE" (rect 1232 1016 1329 1030)(font "Arial" (font_size 8)))
 (text "INSTRUCTION FETCH STAGE" (rect 568 432 732 446)(font "Arial" (font_size 8)))
 (text "INSTRUCTION FETCH TO EXECUTE REGISTERS" (rect 568 1016 833 1030)(font "Arial" (font_size 8)))
 (text "EXECUTE TO WRITE REGISTERS" (rect 576 1424 758 1438)(font "Arial" (font_size 8)))
 (text "WRITE BACK" (rect 1224 1416 1298 1430)(font "Arial" (font_size 8)))
+(text "FETCH OPERANDS AND EXECUTE STAGE" (rect 1232 1016 1470 1030)(font "Arial" (font_size 8)))
 (rectangle (rect 544 408 1928 960))
 (rectangle (rect 544 992 1160 1360))
 (rectangle (rect 1192 992 1928 1360))
