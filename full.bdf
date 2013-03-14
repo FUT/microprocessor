@@ -22,7 +22,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect -16 232 152 248)
+	(rect -8 232 160 248)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -373,14 +373,6 @@ applicable agreement for further details.
 	(pt 352 144)
 )
 (connector
-	(pt 152 240)
-	(pt 352 240)
-)
-(connector
-	(pt 352 240)
-	(pt 384 240)
-)
-(connector
 	(pt 352 144)
 	(pt 976 144)
 )
@@ -422,6 +414,14 @@ applicable agreement for further details.
 	(pt 1376 232)
 	(pt 1432 232)
 	(bus)
+)
+(connector
+	(pt 160 240)
+	(pt 352 240)
+)
+(connector
+	(pt 352 240)
+	(pt 384 240)
 )
 (junction (pt 352 240))
 (junction (pt 1376 232))
