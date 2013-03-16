@@ -118,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 768 176 944 192)
+	(rect 856 176 1032 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "result[15..0]" (rect 90 0 149 12)(font "Arial" ))
 	(pt 0 8)
@@ -443,104 +443,6 @@ applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 416 144 528 256)
-	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "inst6" (rect 3 101 26 113)(font "Arial" ))
-	(port
-		(pt 0 24)
-		(input)
-		(text "aset" (rect 20 17 44 31)(font "Arial" (font_size 8)))
-		(text "aset" (rect 20 17 44 31)(font "Arial" (font_size 8)))
-		(line (pt 0 24)(pt 16 24)(line_width 1))
-		(unused)
-	)
-	(port
-		(pt 0 72)
-		(input)
-		(text "aconst" (rect 20 65 58 79)(font "Arial" (font_size 8)))
-		(text "aconst" (rect 20 65 58 79)(font "Arial" (font_size 8)))
-		(line (pt 0 72)(pt 16 72)(line_width 1))
-		(unused)
-	)
-	(port
-		(pt 0 88)
-		(input)
-		(text "aclr" (rect 20 81 41 95)(font "Arial" (font_size 8)))
-		(text "aclr" (rect 20 81 41 95)(font "Arial" (font_size 8)))
-		(line (pt 0 88)(pt 16 88)(line_width 1))
-	)
-	(port
-		(pt 0 40)
-		(input)
-		(text "data[LPM_WIDTH-1..0]" (rect 20 33 146 47)(font "Arial" (font_size 8)))
-		(text "data[]" (rect 20 33 51 47)(font "Arial" (font_size 8)))
-		(line (pt 0 40)(pt 16 40)(line_width 3))
-	)
-	(port
-		(pt 0 56)
-		(input)
-		(text "gate" (rect 20 49 44 63)(font "Arial" (font_size 8)))
-		(text "gate" (rect 20 49 44 63)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 16 56)(line_width 1))
-	)
-	(port
-		(pt 112 40)
-		(output)
-		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 81 33 95 47)(font "Arial" (font_size 8)))
-		(line (pt 96 40)(pt 112 40)(line_width 3))
-	)
-	(parameter
-		"LPM_WIDTH"
-		"32"
-		"Width of I/O, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(parameter
-		"LPM_AVALUE"
-		"0"
-		"Unsigned value associated with the aset port"
-	)
-	(drawing
-		(line (pt 16 96)(pt 96 96)(line_width 1))
-		(line (pt 16 16)(pt 96 16)(line_width 1))
-		(line (pt 16 96)(pt 16 16)(line_width 1))
-		(line (pt 96 96)(pt 96 16)(line_width 1))
-	)
-	(annotation_block (parameter)(rect 416 96 528 144))
-)
-(symbol
-	(rect 296 -208 408 -160)
-	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
-	(text "inst12" (rect 3 37 32 49)(font "Arial" ))
-	(port
-		(pt 112 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
-		(line (pt 64 32)(pt 112 32)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"3"
-		"Unsigned value to which outputs will be set"
-		(type "PARAMETER_UNSIGNED_DEC")	)
-	(parameter
-		"LPM_WIDTH"
-		"8"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-	)
-	(drawing
-		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
-		(line (pt 16 24)(pt 64 24)(line_width 1))
-		(line (pt 16 40)(pt 64 40)(line_width 1))
-		(line (pt 64 40)(pt 64 24)(line_width 1))
-		(line (pt 16 40)(pt 16 24)(line_width 1))
-	)
-	(annotation_block (parameter)(rect 104 -208 296 -160))
-)
-(symbol
 	(rect 552 152 672 208)
 	(text "LPM_AND" (rect 25 0 96 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 3 45 23 59)(font "Arial" (font_size 8)))
@@ -703,6 +605,104 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 720 376 936 464))
 )
+(symbol
+	(rect 416 144 528 256)
+	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
+	(text "inst9" (rect 3 101 26 113)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(input)
+		(text "aset" (rect 20 17 44 31)(font "Arial" (font_size 8)))
+		(text "aset" (rect 20 17 44 31)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24)(line_width 1))
+		(unused)
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "aconst" (rect 20 65 58 79)(font "Arial" (font_size 8)))
+		(text "aconst" (rect 20 65 58 79)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 1))
+		(unused)
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "aclr" (rect 20 81 41 95)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 20 81 41 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 1))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 20 33 146 47)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 33 51 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40)(line_width 3))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "gate" (rect 20 49 44 63)(font "Arial" (font_size 8)))
+		(text "gate" (rect 20 49 44 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56)(line_width 1))
+	)
+	(port
+		(pt 112 40)
+		(output)
+		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 81 33 95 47)(font "Arial" (font_size 8)))
+		(line (pt 96 40)(pt 112 40)(line_width 3))
+	)
+	(parameter
+		"LPM_WIDTH"
+		"32"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_AVALUE"
+		"0"
+		"Unsigned value associated with the aset port"
+	)
+	(drawing
+		(line (pt 16 96)(pt 96 96)(line_width 1))
+		(line (pt 16 16)(pt 96 16)(line_width 1))
+		(line (pt 16 96)(pt 16 16)(line_width 1))
+		(line (pt 96 96)(pt 96 16)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 416 96 528 144))
+)
+(symbol
+	(rect 296 -208 408 -160)
+	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
+	(text "inst12" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"3"
+		"Unsigned value to which outputs will be set"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_WIDTH"
+		"8"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 64 40)(line_width 1))
+		(line (pt 64 40)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 16 24)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 104 -208 296 -160))
+)
 (connector
 	(pt 664 -112)
 	(pt 656 -112)
@@ -776,7 +776,7 @@ applicable agreement for further details.
 	(pt 656 -144)
 )
 (connector
-	(text "clk" (rect 327 -104 341 -92)(font "Arial" ))
+	(text "clk" (rect 415 -96 429 -84)(font "Arial" ))
 	(pt 416 -112)
 	(pt 432 -112)
 )
@@ -800,11 +800,6 @@ applicable agreement for further details.
 	(pt 448 -16)
 )
 (connector
-	(pt 1240 -104)
-	(pt 1240 -8)
-	(bus)
-)
-(connector
 	(pt 720 536)
 	(pt 592 536)
 	(bus)
@@ -822,16 +817,6 @@ applicable agreement for further details.
 (connector
 	(pt 720 520)
 	(pt 696 520)
-	(bus)
-)
-(connector
-	(pt 672 184)
-	(pt 696 184)
-	(bus)
-)
-(connector
-	(pt 696 184)
-	(pt 768 184)
 	(bus)
 )
 (connector
@@ -886,11 +871,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 552 184)
-	(pt 528 184)
-	(bus)
-)
-(connector
 	(text "clr" (rect 360 216 371 228)(font "Arial" ))
 	(pt 352 232)
 	(pt 416 232)
@@ -933,6 +913,26 @@ applicable agreement for further details.
 	(pt 352 168)
 	(bus)
 )
+(connector
+	(pt 672 184)
+	(pt 696 184)
+	(bus)
+)
+(connector
+	(pt 696 184)
+	(pt 856 184)
+	(bus)
+)
+(connector
+	(pt 528 184)
+	(pt 552 184)
+	(bus)
+)
+(connector
+	(pt 1240 -104)
+	(pt 1240 -8)
+	(bus)
+)
 (junction (pt 656 -176))
 (junction (pt 432 -112))
 (junction (pt 696 184))
@@ -946,5 +946,5 @@ applicable agreement for further details.
 (text "CALCULATE FLAGS" (rect 120 368 236 382)(font "Arial" (font_size 8)))
 (text "I" (rect 128 -288 130 -274)(font "Arial" (font_size 8)))
 (rectangle (rect 80 -312 1288 40))
-(rectangle (rect 80 64 1016 312))
-(rectangle (rect 80 336 1272 624))
+(rectangle (rect 80 64 1288 312))
+(rectangle (rect 80 336 1288 624))
