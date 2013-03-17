@@ -45,6 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
+		(pt 184 64)
+		(output)
+		(text "iteration[15..0]" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "iteration[15..0]" (rect 83 59 163 73)(font "Arial" (font_size 8)))
+		(line (pt 184 64)(pt 168 64)(line_width 3))
+	)
+	(port
 		(pt 184 32)
 		(bidir)
 		(text "CB_convey[15..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
