@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 640 248 816 264)
+	(rect 960 256 1136 272)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "DB[15..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
@@ -86,7 +86,7 @@ applicable agreement for further details.
 	(text "VCC" (rect 4 7 24 17)(font "Arial" (font_size 6)))
 )
 (symbol
-	(rect 296 288 344 320)
+	(rect 616 296 664 328)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "in_out_en" (rect 3 21 50 33)(font "Arial" ))
 	(port
@@ -145,7 +145,7 @@ applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 408 224 584 384)
+	(rect 728 232 904 392)
 	(text "register16" (rect 5 0 62 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 144 31 156)(font "Arial" ))
 	(port
@@ -201,10 +201,37 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 160 144)(line_width 1))
 	)
 )
-(connector
-	(text "clk" (rect 384 272 398 284)(font "Arial" ))
-	(pt 408 288)
-	(pt 376 288)
+(symbol
+	(rect 488 240 552 288)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst3" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
 )
 (connector
 	(text "clk" (rect 216 352 230 364)(font "Arial" ))
@@ -217,46 +244,9 @@ applicable agreement for further details.
 	(pt 96 400)
 )
 (connector
-	(text "gnd" (rect 384 256 401 268)(font "Arial" ))
-	(pt 408 272)
-	(pt 376 272)
-)
-(connector
 	(text "gnd" (rect 80 424 97 436)(font "Arial" ))
 	(pt 72 440)
 	(pt 112 440)
-)
-(connector
-	(text "clr" (rect 384 320 395 332)(font "Arial" ))
-	(pt 408 336)
-	(pt 376 336)
-)
-(connector
-	(text "vcc" (rect 383 304 401 316)(font "Arial" ))
-	(pt 376 320)
-	(pt 408 320)
-)
-(connector
-	(pt 408 304)
-	(pt 344 304)
-)
-(connector
-	(pt 272 256)
-	(pt 272 304)
-)
-(connector
-	(pt 296 304)
-	(pt 272 304)
-)
-(connector
-	(text "write" (rect 333 240 355 252)(font "Arial" ))
-	(pt 408 256)
-	(pt 272 256)
-)
-(connector
-	(pt 584 256)
-	(pt 640 256)
-	(bus)
 )
 (connector
 	(text "clr" (rect 216 320 227 332)(font "Arial" ))
@@ -264,11 +254,68 @@ applicable agreement for further details.
 	(pt 248 336)
 )
 (connector
-	(text "_[14..0], write" (rect 255 112 322 124)(font "Arial" ))
+	(text "clk" (rect 704 280 718 292)(font "Arial" ))
+	(pt 728 296)
+	(pt 696 296)
+)
+(connector
+	(text "gnd" (rect 704 264 721 276)(font "Arial" ))
+	(pt 728 280)
+	(pt 696 280)
+)
+(connector
+	(text "clr" (rect 704 328 715 340)(font "Arial" ))
+	(pt 728 344)
+	(pt 696 344)
+)
+(connector
+	(text "vcc" (rect 703 312 721 324)(font "Arial" ))
+	(pt 696 328)
+	(pt 728 328)
+)
+(connector
+	(pt 728 312)
+	(pt 664 312)
+)
+(connector
+	(pt 592 264)
+	(pt 592 312)
+)
+(connector
+	(pt 616 312)
+	(pt 592 312)
+)
+(connector
+	(pt 904 264)
+	(pt 960 264)
+	(bus)
+)
+(connector
+	(pt 552 264)
+	(pt 592 264)
+)
+(connector
+	(text "<<__$DEF_ALIAS1155>>" (rect 653 248 776 260)(font "Arial" )(invisible))
+	(pt 592 264)
+	(pt 728 264)
+)
+(connector
+	(text "_[11..0], set_on_db, __[1..0], write" (rect 255 112 424 124)(font "Arial" ))
 	(pt 208 128)
 	(pt 456 128)
 	(bus)
 )
+(connector
+	(text "write" (rect 432 240 454 252)(font "Arial" ))
+	(pt 488 256)
+	(pt 424 256)
+)
+(connector
+	(text "set_on_db" (rect 427 256 477 268)(font "Arial" ))
+	(pt 424 272)
+	(pt 488 272)
+)
+(junction (pt 592 264))
 (text "1 - read from DR" (rect 40 232 134 246)(font "Arial" (font_size 8)))
 (text "0 - write to DR" (rect 40 248 122 262)(font "Arial" (font_size 8)))
 (text "read_write signal is reversed for DR" (rect 40 208 247 222)(font "Arial" (font_size 8)))

@@ -288,6 +288,11 @@ applicable agreement for further details.
 	(pt 264 104)
 	(pt 312 104)
 )
+(connector
+	(text "clr" (rect 328 280 339 292)(font "Arial" ))
+	(pt 344 296)
+	(pt 320 296)
+)
 (junction (pt 288 264))
 (junction (pt 288 488))
 (junction (pt 560 488))

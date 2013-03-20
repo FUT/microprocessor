@@ -148,57 +148,6 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
-(pin
-	(bidir)
-	(rect 1024 -80 1206 -64)
-	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "AB[13..0]" (rect 131 0 177 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 56 4)(pt 78 4)(line_width 1))
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 56 12)(pt 78 12)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-		(line (pt 56 4)(pt 52 8)(line_width 1))
-		(line (pt 52 8)(pt 56 12)(line_width 1))
-	)
-	(text "VCC" (rect 4 7 24 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(bidir)
-	(rect 1024 -64 1206 -48)
-	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "DB[15..0]" (rect 130 0 177 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 56 4)(pt 78 4)(line_width 1))
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 56 12)(pt 78 12)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-		(line (pt 56 4)(pt 52 8)(line_width 1))
-		(line (pt 52 8)(pt 56 12)(line_width 1))
-	)
-	(text "VCC" (rect 4 7 24 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(bidir)
-	(rect 1024 -96 1207 -80)
-	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "CB[15..0]" (rect 131 0 178 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 56 4)(pt 78 4)(line_width 1))
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 56 12)(pt 78 12)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-		(line (pt 56 4)(pt 52 8)(line_width 1))
-		(line (pt 52 8)(pt 56 12)(line_width 1))
-	)
-	(text "VCC" (rect 4 7 24 17)(font "Arial" (font_size 6)))
-)
 (symbol
 	(rect 672 -192 720 -160)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
@@ -265,49 +214,6 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 176 80)(line_width 1))
-	)
-)
-(symbol
-	(rect 776 -136 1008 -8)
-	(text "internal_bus" (rect 5 0 74 14)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 112 31 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "internal_bus[47..0]" (rect 0 0 105 14)(font "Arial" (font_size 8)))
-		(text "internal_bus[47..0]" (rect 21 27 126 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 232 32)
-		(bidir)
-		(text "formed[63..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
-		(text "formed[63..0]" (rect 136 27 211 41)(font "Arial" (font_size 8)))
-		(line (pt 232 32)(pt 216 32)(line_width 3))
-	)
-	(port
-		(pt 232 48)
-		(bidir)
-		(text "CB[15..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
-		(text "CB[15..0]" (rect 160 43 211 57)(font "Arial" (font_size 8)))
-		(line (pt 232 48)(pt 216 48)(line_width 3))
-	)
-	(port
-		(pt 232 64)
-		(bidir)
-		(text "AB[13..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "AB[13..0]" (rect 158 59 211 73)(font "Arial" (font_size 8)))
-		(line (pt 232 64)(pt 216 64)(line_width 3))
-	)
-	(port
-		(pt 232 80)
-		(bidir)
-		(text "DB[15..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
-		(text "DB[15..0]" (rect 160 75 211 89)(font "Arial" (font_size 8)))
-		(line (pt 232 80)(pt 216 80)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 216 112)(line_width 1))
 	)
 )
 (symbol
@@ -717,21 +623,6 @@ applicable agreement for further details.
 	(pt 720 -176)
 )
 (connector
-	(pt 1024 -88)
-	(pt 1008 -88)
-	(bus)
-)
-(connector
-	(pt 1024 -72)
-	(pt 1008 -72)
-	(bus)
-)
-(connector
-	(pt 1024 -56)
-	(pt 1008 -56)
-	(bus)
-)
-(connector
 	(pt 432 -112)
 	(pt 432 -72)
 )
@@ -759,12 +650,6 @@ applicable agreement for further details.
 (connector
 	(pt 448 -144)
 	(pt 432 -144)
-	(bus)
-)
-(connector
-	(text "_ICB[15..0], _CB[15..0], _AB[15..0], _DB[15..0]" (rect 1018 -120 1254 -108)(font "Arial" ))
-	(pt 1008 -104)
-	(pt 1240 -104)
 	(bus)
 )
 (connector
@@ -822,11 +707,6 @@ applicable agreement for further details.
 (connector
 	(pt 432 -72)
 	(pt 656 -72)
-)
-(connector
-	(pt 1104 -8)
-	(pt 1240 -8)
-	(bus)
 )
 (connector
 	(text "F[1]" (rect 888 472 908 484)(font "Arial" ))
@@ -929,8 +809,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1240 -104)
-	(pt 1240 -8)
+	(text "_ICB[15..0], _CB[15..0], _AB[15..0]" (rect 786 -120 961 -108)(font "Arial" ))
+	(pt 776 -104)
+	(pt 1008 -104)
 	(bus)
 )
 (junction (pt 656 -176))
