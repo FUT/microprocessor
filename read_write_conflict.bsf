@@ -26,16 +26,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "to_OF[63..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
-		(text "to_OF[63..0]" (rect 21 27 90 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "toggle" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "toggle" (rect 21 27 55 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "to_WRITE[63..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
-		(text "to_WRITE[63..0]" (rect 21 43 110 57)(font "Arial" (font_size 8)))
+		(text "to_OF[63..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "to_OF[63..0]" (rect 21 43 90 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "to_WRITE[63..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "to_WRITE[63..0]" (rect 21 59 110 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 184 32)
