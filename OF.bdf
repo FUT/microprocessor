@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -88 800 101 816)
+	(rect 8 800 197 816)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "latched_cmd[63..0]" (rect 90 0 184 12)(font "Arial" ))
 	(pt 0 8)
@@ -1193,6 +1193,123 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20)(line_width 1))
 	)
 )
+(symbol
+	(rect 96 1024 216 1120)
+	(text "octet_compare" (rect 5 0 89 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "a[3..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "a[3..0]" (rect 21 27 56 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "b[3..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "b[3..0]" (rect 21 43 56 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "equal" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "equal" (rect 69 27 99 41)(font "Arial" (font_size 8)))
+		(line (pt 120 32)(pt 104 32)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 80)(line_width 1))
+	)
+)
+(symbol
+	(rect -104 1024 8 1072)
+	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
+	(text "inst7" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"8"
+		"Unsigned value to which outputs will be set"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"4"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 64 40)(line_width 1))
+		(line (pt 64 40)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 16 24)(line_width 1))
+	)
+	(annotation_block (parameter)(rect -104 976 8 1024))
+)
+(symbol
+	(rect 216 1040 264 1072)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst13" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7)(line_width 1))
+		(line (pt 13 7)(pt 31 16)(line_width 1))
+		(line (pt 13 25)(pt 31 16)(line_width 1))
+		(circle (rect 31 12 39 20)(line_width 1))
+	)
+)
+(symbol
+	(rect 416 1024 480 1072)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst14" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
 (connector
 	(pt 560 192)
 	(pt 552 192)
@@ -1603,21 +1720,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -136 808)
-	(pt -88 808)
-	(bus)
-)
-(connector
-	(pt -136 512)
-	(pt -136 672)
-	(bus)
-)
-(connector
-	(pt -136 672)
-	(pt -136 808)
-	(bus)
-)
-(connector
 	(pt -136 80)
 	(pt -136 512)
 	(bus)
@@ -1682,6 +1784,54 @@ applicable agreement for further details.
 	(pt -136 -64)
 	(bus)
 )
+(connector
+	(pt -136 512)
+	(pt -136 672)
+	(bus)
+)
+(connector
+	(text "_cmd[35..32]" (rect 32 1080 96 1092)(font "Arial" ))
+	(pt 24 1072)
+	(pt 96 1072)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS382>>" (rect 32 1040 150 1052)(font "Arial" )(invisible))
+	(pt 8 1056)
+	(pt 96 1056)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS418>>" (rect 272 1040 390 1052)(font "Arial" )(invisible))
+	(pt 264 1056)
+	(pt 416 1056)
+)
+(connector
+	(text "_cmd_in[63]" (rect 357 1024 417 1036)(font "Arial" ))
+	(pt 416 1040)
+	(pt 328 1040)
+)
+(connector
+	(text "write_enable" (rect 488 1032 548 1044)(font "Arial" ))
+	(pt 480 1048)
+	(pt 576 1048)
+)
+(connector
+	(pt -136 672)
+	(pt -136 808)
+	(bus)
+)
+(connector
+	(pt -136 808)
+	(pt -136 824)
+	(bus)
+)
+(connector
+	(text "write_enable, _cmd[62..0]" (rect -111 792 15 804)(font "Arial" ))
+	(pt -136 808)
+	(pt 8 808)
+	(bus)
+)
 (junction (pt 552 128))
 (junction (pt 368 344))
 (junction (pt 216 344))
@@ -1710,6 +1860,7 @@ applicable agreement for further details.
 (junction (pt 440 272))
 (junction (pt 336 208))
 (junction (pt -136 -144))
+(junction (pt -136 808))
 (text "MICROCOMMAND BLOCK" (rect 560 64 705 78)(font "Arial" (font_size 8)))
 (text "TWO" (rect -112 -96 -84 -82)(font "Arial" (font_size 8)))
 (text "ONE" (rect -112 -24 -88 -10)(font "Arial" (font_size 8)))
@@ -1718,6 +1869,10 @@ applicable agreement for further details.
 (text "SELECT PROGRAM LENGTH" (rect -176 -304 -16 -290)(font "Arial" (font_size 8)))
 (text "SET SELECTED OPERAND ADDRESS ON _AB" (rect -120 304 138 318)(font "Arial" (font_size 8)))
 (text "STORE FETCHED OPERANDS" (rect 352 304 518 318)(font "Arial" (font_size 8)))
+(text "COMAND IS NOT PUSH" (rect -152 912 -22 926)(font "Arial" (font_size 8)))
+(text "PUSH CMD" (rect -80 1080 -19 1094)(font "Arial" (font_size 8)))
+(text "IS NOT PUSH" (rect 296 1064 370 1078)(font "Arial" (font_size 8)))
 (rectangle (rect -200 -344 360 112))
-(rectangle (rect -176 280 288 840))
-(rectangle (rect 328 280 1232 840))
+(rectangle (rect -176 280 288 848))
+(rectangle (rect 328 280 1232 848))
+(rectangle (rect -176 888 648 1160))
