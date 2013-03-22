@@ -22,7 +22,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect 344 560 512 576)
+	(rect 232 576 400 592)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "start" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
@@ -262,7 +262,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 752 608 940 624)
+	(rect 760 624 948 640)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "CM_iteration[15..0]" (rect 90 0 183 12)(font "Arial" ))
 	(pt 0 8)
@@ -560,7 +560,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 568 536 752 664)
+	(rect 488 552 672 680)
 	(text "CM" (rect 5 0 22 14)(font "Arial" (font_size 8)))
 	(text "inst4" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -774,33 +774,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 792 584)
-	(pt 752 584)
-	(bus)
-)
-(connector
 	(pt 1064 384)
 	(pt 1064 600)
-	(bus)
-)
-(connector
-	(pt 752 600)
-	(pt 1064 600)
-	(bus)
-)
-(connector
-	(pt 1064 600)
-	(pt 1168 600)
-	(bus)
-)
-(connector
-	(pt 792 368)
-	(pt 792 480)
-	(bus)
-)
-(connector
-	(pt 792 480)
-	(pt 792 584)
 	(bus)
 )
 (connector
@@ -849,23 +824,53 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "clk" (rect 528 568 542 580)(font "Arial" ))
-	(pt 568 584)
-	(pt 520 584)
-)
-(connector
-	(pt 512 568)
-	(pt 568 568)
-)
-(connector
-	(text "clr" (rect 760 552 771 564)(font "Arial" ))
-	(pt 752 568)
-	(pt 784 568)
-)
-(connector
 	(text "clr" (rect 424 240 435 252)(font "Arial" ))
 	(pt 416 256)
 	(pt 448 256)
+)
+(connector
+	(text "clk" (rect 448 584 462 596)(font "Arial" ))
+	(pt 432 600)
+	(pt 488 600)
+)
+(connector
+	(pt 1064 600)
+	(pt 1168 600)
+	(bus)
+)
+(connector
+	(pt 792 368)
+	(pt 792 480)
+	(bus)
+)
+(connector
+	(pt 792 480)
+	(pt 792 616)
+	(bus)
+)
+(connector
+	(pt 672 632)
+	(pt 760 632)
+	(bus)
+)
+(connector
+	(pt 672 600)
+	(pt 1064 600)
+	(bus)
+)
+(connector
+	(pt 672 616)
+	(pt 792 616)
+	(bus)
+)
+(connector
+	(text "clr" (rect 704 568 715 580)(font "Arial" ))
+	(pt 672 584)
+	(pt 728 584)
+)
+(connector
+	(pt 400 584)
+	(pt 488 584)
 )
 (junction (pt 1064 600))
 (junction (pt 1400 568))
