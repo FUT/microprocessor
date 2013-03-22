@@ -672,7 +672,7 @@ applicable agreement for further details.
 (symbol
 	(rect 344 344 456 440)
 	(text "state_trigger" (rect 5 0 76 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -686,13 +686,6 @@ applicable agreement for further details.
 		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
 		(text "reset" (rect 21 43 50 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 59 50 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 112 32)
@@ -838,20 +831,12 @@ applicable agreement for further details.
 	(pt 696 408)
 )
 (connector
-	(pt 320 456)
-	(pt 320 408)
-)
-(connector
 	(pt 312 376)
 	(pt 344 376)
 )
 (connector
 	(pt 312 392)
 	(pt 344 392)
-)
-(connector
-	(pt 320 408)
-	(pt 344 408)
 )
 (connector
 	(pt 576 392)
@@ -862,20 +847,15 @@ applicable agreement for further details.
 	(pt 408 464)
 )
 (connector
-	(pt 312 456)
-	(pt 320 456)
-)
-(connector
-	(pt 320 456)
-	(pt 344 456)
-)
-(connector
 	(pt 312 472)
 	(pt 344 472)
+)
+(connector
+	(pt 312 456)
+	(pt 344 456)
 )
 (junction (pt 848 440))
 (junction (pt 776 320))
 (junction (pt 1016 320))
 (junction (pt 480 376))
 (junction (pt 696 384))
-(junction (pt 320 456))

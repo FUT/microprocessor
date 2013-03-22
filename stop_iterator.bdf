@@ -590,42 +590,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 384 40 608 128))
 )
 (symbol
-	(rect 320 328 432 424)
-	(text "state_trigger" (rect 5 0 76 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "set" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "set" (rect 21 27 38 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "reset" (rect 21 43 50 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 59 50 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
-		(pt 112 32)
-		(output)
-		(text "state" (rect 0 0 28 14)(font "Arial" (font_size 8)))
-		(text "state" (rect 63 27 91 41)(font "Arial" (font_size 8)))
-		(line (pt 112 32)(pt 96 32)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 96 80)(line_width 1))
-	)
-)
-(symbol
 	(rect 280 248 328 312)
 	(text "OR2" (rect 38 1 48 19)(font "Arial" (font_size 6))(vertical))
 	(text "inst2" (rect -1 3 11 26)(font "Arial" )(vertical))
@@ -717,6 +681,35 @@ applicable agreement for further details.
 	)
 	(rotate270)
 )
+(symbol
+	(rect 320 328 432 424)
+	(text "state_trigger" (rect 5 0 76 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "set" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "set" (rect 21 27 38 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 43 50 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "state" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "state" (rect 63 27 91 41)(font "Arial" (font_size 8)))
+		(line (pt 112 32)(pt 96 32)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 80)(line_width 1))
+	)
+)
 (connector
 	(pt 728 296)
 	(pt 728 280)
@@ -783,14 +776,6 @@ applicable agreement for further details.
 	(pt 304 376)
 )
 (connector
-	(pt 320 392)
-	(pt 304 392)
-)
-(connector
-	(pt 304 392)
-	(pt 304 472)
-)
-(connector
 	(pt 648 288)
 	(pt 832 288)
 )
@@ -823,14 +808,6 @@ applicable agreement for further details.
 (connector
 	(pt 968 280)
 	(pt 992 280)
-)
-(connector
-	(pt 288 472)
-	(pt 304 472)
-)
-(connector
-	(pt 304 472)
-	(pt 528 472)
 )
 (connector
 	(pt 432 360)
@@ -889,10 +866,13 @@ applicable agreement for further details.
 	(pt 200 200)
 	(pt 296 200)
 )
+(connector
+	(pt 288 472)
+	(pt 528 472)
+)
 (junction (pt 800 400))
 (junction (pt 648 368))
 (junction (pt 728 280))
 (junction (pt 968 280))
-(junction (pt 304 472))
 (junction (pt 536 360))
 (junction (pt 200 200))

@@ -592,13 +592,6 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 0 64)
-		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 59 50 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
 		(pt 112 32)
 		(output)
 		(text "state" (rect 0 0 28 14)(font "Arial" (font_size 8)))
@@ -688,14 +681,6 @@ applicable agreement for further details.
 	(pt 192 376)
 )
 (connector
-	(pt 208 392)
-	(pt 192 392)
-)
-(connector
-	(pt 192 392)
-	(pt 192 472)
-)
-(connector
 	(pt 680 400)
 	(pt 688 400)
 	(bus)
@@ -726,14 +711,6 @@ applicable agreement for further details.
 	(pt 880 280)
 )
 (connector
-	(pt 176 472)
-	(pt 192 472)
-)
-(connector
-	(pt 192 472)
-	(pt 416 472)
-)
-(connector
 	(pt 536 288)
 	(pt 720 288)
 )
@@ -749,9 +726,12 @@ applicable agreement for further details.
 	(pt 320 360)
 	(pt 424 360)
 )
+(connector
+	(pt 176 472)
+	(pt 416 472)
+)
 (junction (pt 688 400))
 (junction (pt 536 368))
 (junction (pt 616 280))
 (junction (pt 856 280))
 (junction (pt 424 360))
-(junction (pt 192 472))
