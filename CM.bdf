@@ -176,39 +176,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 560 136 624 184)
-	(text "AND2" (rect 39 0 63 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 38 37 61 49)(font "Arial" ))
-	(port
-		(pt 64 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 45 7 62 19)(font "Courier New" (bold))(invisible))
-		(line (pt 64 16)(pt 50 16)(line_width 1))
-	)
-	(port
-		(pt 64 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 45 23 62 35)(font "Courier New" (bold))(invisible))
-		(line (pt 64 32)(pt 50 32)(line_width 1))
-	)
-	(port
-		(pt 0 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect -1 15 16 27)(font "Courier New" (bold))(invisible))
-		(line (pt 22 24)(pt 0 24)(line_width 1))
-	)
-	(drawing
-		(line (pt 50 12)(pt 34 12)(line_width 1))
-		(line (pt 50 37)(pt 33 37)(line_width 1))
-		(line (pt 50 12)(pt 50 37)(line_width 1))
-		(arc (pt 34 12)(pt 33 37)(rect 21 12 46 37)(line_width 1))
-	)
-	(flipy)
-)
-(symbol
 	(rect 528 104 560 136)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 -1 32 11)(font "Arial" )(invisible))
@@ -860,11 +827,6 @@ applicable agreement for further details.
 	(pt 272 448)
 )
 (connector
-	(text "convey_ready" (rect 632 136 703 148)(font "Arial" ))
-	(pt 696 152)
-	(pt 624 152)
-)
-(connector
 	(pt 544 184)
 	(pt 544 224)
 	(bus)
@@ -1040,11 +1002,6 @@ applicable agreement for further details.
 	(pt 352 152)
 )
 (connector
-	(text "CB_convey[15]" (rect 632 152 709 164)(font "Arial" ))
-	(pt 624 168)
-	(pt 696 168)
-)
-(connector
 	(text "CB_convey[14]" (rect 336 1328 413 1340)(font "Arial" ))
 	(pt 400 1344)
 	(pt 328 1344)
@@ -1128,6 +1085,11 @@ applicable agreement for further details.
 (connector
 	(pt 192 1472)
 	(pt 216 1472)
+)
+(connector
+	(text "strt" (rect 578 144 594 156)(font "Arial" ))
+	(pt 608 160)
+	(pt 560 160)
 )
 (junction (pt 280 1608))
 (junction (pt 192 1472))
