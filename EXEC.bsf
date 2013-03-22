@@ -86,6 +86,13 @@ applicable agreement for further details.
 		(text "flags[7..0]" (rect 107 59 163 73)(font "Arial" (font_size 8)))
 		(line (pt 184 64)(pt 168 64)(line_width 3))
 	)
+	(port
+		(pt 184 80)
+		(output)
+		(text "halt" (rect 0 0 20 14)(font "Arial" (font_size 8)))
+		(text "halt" (rect 143 75 163 89)(font "Arial" (font_size 8)))
+		(line (pt 184 80)(pt 168 80)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 168 144)(line_width 1))
 	)
