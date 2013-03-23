@@ -22,25 +22,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect 288 -16 456 0)
+	(rect 320 160 488 176)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "bus_busy" (rect 5 0 53 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 288 64 456 80)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "request" (rect 5 0 41 12)(font "Arial" ))
+	(text "DMAB[5..0]" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -54,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 56 824 72)
+	(rect 1192 432 1368 448)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "permit" (rect 90 0 120 12)(font "Arial" ))
 	(pt 0 8)
@@ -70,9 +54,9 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 648 32 831 48)
+	(rect 1192 368 1368 384)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "CB[15..0]" (rect 131 0 178 12)(font "Arial" ))
+	(text "CB[15..0]" (rect 90 0 137 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4)(line_width 1))
@@ -86,7 +70,7 @@ applicable agreement for further details.
 	(text "VCC" (rect 4 7 24 17)(font "Arial" (font_size 6)))
 )
 (symbol
-	(rect 608 -32 640 16)
+	(rect 1120 272 1152 320)
 	(text "TRI" (rect 0 1 10 16)(font "Arial" (font_size 6))(vertical))
 	(text "inst1" (rect 21 3 33 26)(font "Arial" )(vertical))
 	(port
@@ -118,7 +102,7 @@ applicable agreement for further details.
 	(flipy_rotate90)
 )
 (symbol
-	(rect 608 -64 640 -32)
+	(rect 1120 240 1152 272)
 	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 -1 26 11)(font "Arial" )(invisible))
 	(port
@@ -136,7 +120,7 @@ applicable agreement for further details.
 	(flipx)
 )
 (symbol
-	(rect 456 -24 504 8)
+	(rect 784 280 832 312)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 21 20 33)(font "Arial" ))
 	(port
@@ -161,7 +145,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 536 40 600 88)
+	(rect 1056 416 1120 464)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -192,38 +176,154 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
 	)
 )
-(connector
-	(pt 520 56)
-	(pt 536 56)
+(symbol
+	(rect 664 416 784 472)
+	(text "LPM_OR" (rect 35 0 97 16)(font "Arial" (font_size 10)))
+	(text "inst3" (rect 3 45 26 57)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (rect 5 19 220 33)(font "Arial" (font_size 8)))
+		(text "data[][]" (rect 5 19 43 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 49 32)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 83 19 216 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 83 19 121 33)(font "Arial" (font_size 8)))
+		(line (pt 80 32)(pt 120 32)(line_width 3))
+	)
+	(parameter
+		"LPM_WIDTH"
+		"1"
+		"Number of gates, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_SIZE"
+		"3"
+		"Number of inputs per gate, any integer > 0"
+		" 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(line (pt 46 21)(pt 57 21)(line_width 1))
+		(line (pt 46 43)(pt 57 43)(line_width 1))
+		(arc (pt 81 32)(pt 57 21)(rect 26 21 89 84)(line_width 1))
+		(arc (pt 57 43)(pt 81 32)(rect 26 -19 89 44)(line_width 1))
+		(arc (pt 39 37)(pt 39 27)(rect 18 16 51 49)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 664 368 768 416))
+)
+(symbol
+	(rect 664 264 784 320)
+	(text "LPM_OR" (rect 35 0 97 16)(font "Arial" (font_size 10)))
+	(text "inst4" (rect 3 45 26 57)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (rect 5 19 220 33)(font "Arial" (font_size 8)))
+		(text "data[][]" (rect 5 19 43 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 49 32)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 83 19 216 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 83 19 121 33)(font "Arial" (font_size 8)))
+		(line (pt 80 32)(pt 120 32)(line_width 3))
+	)
+	(parameter
+		"LPM_WIDTH"
+		"1"
+		"Number of gates, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_SIZE"
+		"3"
+		"Number of inputs per gate, any integer > 0"
+		" 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(line (pt 46 21)(pt 57 21)(line_width 1))
+		(line (pt 46 43)(pt 57 43)(line_width 1))
+		(arc (pt 81 32)(pt 57 21)(rect 26 21 89 84)(line_width 1))
+		(arc (pt 57 43)(pt 81 32)(rect 26 -19 89 44)(line_width 1))
+		(arc (pt 39 37)(pt 39 27)(rect 18 16 51 49)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 664 216 768 264))
 )
 (connector
-	(pt 520 -8)
-	(pt 520 56)
-)
-(connector
-	(pt 504 -8)
-	(pt 520 -8)
-)
-(connector
-	(pt 520 -8)
-	(pt 608 -8)
-)
-(connector
-	(pt 624 16)
-	(pt 624 40)
+	(text "DMAB[5..3]" (rect 587 280 643 292)(font "Arial" ))
+	(pt 560 296)
+	(pt 664 296)
 	(bus)
 )
 (connector
-	(pt 624 40)
-	(pt 648 40)
+	(pt 560 168)
+	(pt 560 296)
 	(bus)
 )
 (connector
-	(pt 536 72)
-	(pt 456 72)
+	(text "DMAB[2..0]" (rect 587 432 643 444)(font "Arial" ))
+	(pt 560 448)
+	(pt 664 448)
+	(bus)
 )
 (connector
-	(pt 600 64)
-	(pt 648 64)
+	(pt 560 296)
+	(pt 560 448)
+	(bus)
 )
-(junction (pt 520 -8))
+(connector
+	(pt 560 448)
+	(pt 560 480)
+	(bus)
+)
+(connector
+	(pt 1032 432)
+	(pt 1056 432)
+)
+(connector
+	(pt 784 448)
+	(pt 1056 448)
+	(bus)
+)
+(connector
+	(pt 1032 296)
+	(pt 1032 432)
+)
+(connector
+	(pt 832 296)
+	(pt 1032 296)
+)
+(connector
+	(pt 1032 296)
+	(pt 1120 296)
+)
+(connector
+	(pt 1120 440)
+	(pt 1192 440)
+)
+(connector
+	(pt 1136 320)
+	(pt 1136 376)
+	(bus)
+)
+(connector
+	(pt 1136 376)
+	(pt 1192 376)
+	(bus)
+)
+(connector
+	(text "DMAB[5..0]" (rect 499 152 555 164)(font "Arial" ))
+	(pt 488 168)
+	(pt 560 168)
+	(bus)
+)
+(junction (pt 560 296))
+(junction (pt 560 448))
+(junction (pt 1032 296))
+(text "REQUEST" (rect 664 352 719 366)(font "Arial" (font_size 8)))
+(text "BUSY" (rect 664 200 698 214)(font "Arial" (font_size 8)))

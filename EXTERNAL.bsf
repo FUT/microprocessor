@@ -21,27 +21,20 @@ applicable agreement for further details.
 (header "symbol" (version "1.1"))
 (symbol
 	(rect 16 16 184 112)
-	(text "DMA" (rect 5 0 32 14)(font "Arial" (font_size 8)))
+	(text "EXTERNAL" (rect 5 0 67 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "DMAB[5..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
-		(text "DMAB[5..0]" (rect 21 27 84 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 168 48)
-		(output)
-		(text "permit" (rect 0 0 34 14)(font "Arial" (font_size 8)))
-		(text "permit" (rect 113 43 147 57)(font "Arial" (font_size 8)))
-		(line (pt 168 48)(pt 152 48)(line_width 1))
+		(text "permitted" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "permitted" (rect 21 27 72 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 168 32)
 		(bidir)
-		(text "CB[15..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
-		(text "CB[15..0]" (rect 96 27 147 41)(font "Arial" (font_size 8)))
+		(text "DMAB[5..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "DMAB[5..0]" (rect 84 27 147 41)(font "Arial" (font_size 8)))
 		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(drawing

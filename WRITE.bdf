@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 728 -240 896 -224)
+	(rect 696 -240 864 -224)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "permitted" (rect 5 0 51 12)(font "Arial" ))
 	(pt 168 8)
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 728 -224 896 -208)
+	(rect 696 -224 864 -208)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "clock" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
@@ -1029,28 +1029,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 928 -576)
-	(pt 912 -576)
-)
-(connector
-	(pt 912 -576)
-	(pt 912 -456)
-)
-(connector
 	(pt 640 -560)
 	(pt 640 -456)
-)
-(connector
-	(pt 840 -608)
-	(pt 880 -608)
-)
-(connector
-	(pt 880 -640)
-	(pt 928 -640)
-)
-(connector
-	(pt 880 -248)
-	(pt 896 -248)
 )
 (connector
 	(pt 1288 -216)
@@ -1059,23 +1039,6 @@ applicable agreement for further details.
 (connector
 	(pt 1288 -456)
 	(pt 1288 -216)
-)
-(connector
-	(pt 912 -456)
-	(pt 1288 -456)
-)
-(connector
-	(pt 880 -640)
-	(pt 880 -608)
-)
-(connector
-	(pt 880 -608)
-	(pt 880 -248)
-)
-(connector
-	(text "clk" (rect 734 -472 748 -460)(font "Arial" ))
-	(pt 640 -456)
-	(pt 912 -456)
 )
 (connector
 	(text "_cmd[63..0]" (rect 113 -664 172 -652)(font "Arial" ))
@@ -1094,14 +1057,59 @@ applicable agreement for further details.
 	(pt 168 -240)
 	(bus)
 )
+(connector
+	(pt 896 -232)
+	(pt 864 -232)
+)
+(connector
+	(pt 896 -248)
+	(pt 864 -248)
+)
+(connector
+	(pt 840 -608)
+	(pt 864 -608)
+)
+(connector
+	(pt 928 -640)
+	(pt 864 -640)
+)
+(connector
+	(pt 864 -640)
+	(pt 864 -608)
+)
+(connector
+	(pt 864 -608)
+	(pt 864 -248)
+)
+(connector
+	(text "clk" (rect 734 -472 748 -460)(font "Arial" ))
+	(pt 640 -456)
+	(pt 1288 -456)
+)
+(connector
+	(pt 880 -576)
+	(pt 928 -576)
+)
+(connector
+	(pt 880 -576)
+	(pt 880 -216)
+)
+(connector
+	(pt 896 -216)
+	(pt 880 -216)
+)
+(connector
+	(pt 880 -216)
+	(pt 864 -216)
+)
 (junction (pt 168 -240))
 (junction (pt 168 -208))
 (junction (pt 536 -224))
 (junction (pt 472 -592))
 (junction (pt 536 -376))
 (junction (pt 168 -376))
-(junction (pt 912 -456))
-(junction (pt 880 -608))
+(junction (pt 864 -608))
+(junction (pt 880 -216))
 (text "MICROCOMMAND BLOCK" (rect 928 -704 1073 -690)(font "Arial" (font_size 8)))
 (text "CHECK DMA PERMISSION" (rect 704 -352 849 -338)(font "Arial" (font_size 8)))
 (rectangle (rect 680 -368 1320 -120))
