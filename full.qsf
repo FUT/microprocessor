@@ -122,8 +122,8 @@ set_global_assignment -name BDF_FILE EX_POP.bdf
 set_global_assignment -name HEX_FILE EX_POP_48.hex
 set_global_assignment -name BDF_FILE EX_NOTZ.bdf
 set_global_assignment -name HEX_FILE EX_NOTZ_48.hex
-set_global_assignment -name HEX_FILE EX_INCS_48.hex
 set_global_assignment -name BDF_FILE EX_INCS.bdf
+set_global_assignment -name HEX_FILE EX_INCS_48.hex
 set_global_assignment -name BDF_FILE EX_ROL.bdf
 set_global_assignment -name HEX_FILE EX_ROL_48.hex
 set_global_assignment -name QIP_FILE lpm_clshift0.qip

@@ -5242,6 +5242,96 @@ SIGNAL("T_DB_stack[0]")
 	PARENT = "T_DB_stack";
 }
 
+SIGNAL("T_tmp_flags")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("T_tmp_flags[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
+SIGNAL("T_tmp_flags[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
+SIGNAL("T_tmp_flags[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
+SIGNAL("T_tmp_flags[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
+SIGNAL("T_tmp_flags[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
+SIGNAL("T_tmp_flags[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
+SIGNAL("T_tmp_flags[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
+SIGNAL("T_tmp_flags[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "T_tmp_flags";
+}
+
 TRANSITION_LIST("AB[13]")
 {
 	NODE
@@ -9786,6 +9876,78 @@ TRANSITION_LIST("T_DB_stack[1]")
 }
 
 TRANSITION_LIST("T_DB_stack[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 15000.0;
+	}
+}
+
+TRANSITION_LIST("T_tmp_flags[0]")
 {
 	NODE
 	{
@@ -14997,6 +15159,96 @@ DISPLAY_LINE
 	TREE_INDEX = 520;
 	TREE_LEVEL = 1;
 	PARENT = 504;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 521;
+	TREE_LEVEL = 0;
+	CHILDREN = 522, 523, 524, 525, 526, 527, 528, 529;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 522;
+	TREE_LEVEL = 1;
+	PARENT = 521;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 523;
+	TREE_LEVEL = 1;
+	PARENT = 521;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 524;
+	TREE_LEVEL = 1;
+	PARENT = 521;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 525;
+	TREE_LEVEL = 1;
+	PARENT = 521;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 526;
+	TREE_LEVEL = 1;
+	PARENT = 521;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 527;
+	TREE_LEVEL = 1;
+	PARENT = 521;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 528;
+	TREE_LEVEL = 1;
+	PARENT = 521;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "T_tmp_flags[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 529;
+	TREE_LEVEL = 1;
+	PARENT = 521;
 }
 
 TIME_BAR
