@@ -49,11 +49,6 @@ set_global_assignment -name INCREMENTAL_COMPILATION FULL_INCREMENTAL_COMPILATION
 set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT FAST
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name MISC_FILE "C:/Users/FUT/Documents/GitHub/microprocessor/full.dpf"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE full.vwf
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name BDF_FILE arithmetic_flags.bdf
 set_global_assignment -name BDF_FILE full.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE full.vwf
@@ -132,4 +127,12 @@ set_global_assignment -name HEX_FILE EX_MOV_48.hex
 set_global_assignment -name BDF_FILE EX_JMP.bdf
 set_global_assignment -name BDF_FILE EX_JZ.bdf
 set_global_assignment -name HEX_FILE EX_JZ_48.hex
+set_global_assignment -name BDF_FILE A5.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE A5.vwf
+set_global_assignment -name BDF_FILE PHT.bdf
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE full.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

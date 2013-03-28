@@ -182,7 +182,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1072 768 1248 784)
+	(rect 1120 768 1296 784)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "cmd[63..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
@@ -850,7 +850,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 280 776 384 808))
 )
 (symbol
-	(rect 960 736 1072 848)
+	(rect 1008 736 1120 848)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
 	(text "inst6" (rect 3 101 26 113)(font "Arial" ))
 	(port
@@ -914,7 +914,7 @@ applicable agreement for further details.
 		(line (pt 16 96)(pt 16 16)(line_width 1))
 		(line (pt 96 96)(pt 96 16)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 960 688 1072 736))
+	(annotation_block (parameter)(rect 1008 688 1120 736))
 )
 (symbol
 	(rect 360 -168 408 -104)
@@ -1087,6 +1087,55 @@ applicable agreement for further details.
 	(rotate180)
 	(annotation_block (parameter)(rect 352 480 456 512))
 )
+(symbol
+	(rect 280 1032 392 1120)
+	(text "BUSMUX" (rect 28 72 91 88)(font "Arial" (font_size 10)))
+	(text "prediction4" (rect -21 -1 32 11)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 23 44 37)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 44 24)(line_width 3))
+	)
+	(port
+		(pt 56 0)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 4 75 18)(font "Arial" (font_size 8)))
+		(line (pt 56 0)(pt 56 16)(line_width 1))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 55 44 69)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 44 56)(line_width 3))
+	)
+	(port
+		(pt 112 40)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 39 113 53)(font "Arial" (font_size 8)))
+		(line (pt 68 40)(pt 112 40)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"16"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 47 56 57)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 23 56 33)(font "Arial" (font_size 6)))
+		(line (pt 68 24)(pt 68 56)(line_width 1))
+		(line (pt 44 8)(pt 44 72)(line_width 1))
+		(line (pt 44 72)(pt 68 56)(line_width 1))
+		(line (pt 44 8)(pt 68 24)(line_width 1))
+	)
+	(flipx)
+	(annotation_block (parameter)(rect 280 1120 384 1152))
+)
 (connector
 	(pt 896 248)
 	(pt 960 248)
@@ -1146,11 +1195,6 @@ applicable agreement for further details.
 (connector
 	(pt 960 -64)
 	(pt 960 248)
-	(bus)
-)
-(connector
-	(pt 696 -64)
-	(pt 960 -64)
 	(bus)
 )
 (connector
@@ -1278,16 +1322,6 @@ applicable agreement for further details.
 	(pt 320 -456)
 )
 (connector
-	(text "clr" (rect 912 808 923 820)(font "Arial" ))
-	(pt 904 824)
-	(pt 960 824)
-)
-(connector
-	(text "_ICB[8]" (rect 912 776 949 788)(font "Arial" ))
-	(pt 904 792)
-	(pt 960 792)
-)
-(connector
 	(text "instr[15..0]" (rect 183 728 236 740)(font "Arial" ))
 	(pt 280 744)
 	(pt 152 744)
@@ -1377,12 +1411,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "working, gnd[21..0], jump, instr[39..16], next_or_low[15..0]" (rect 706 760 992 772)(font "Arial" ))
-	(pt 696 776)
-	(pt 960 776)
-	(bus)
-)
-(connector
 	(text "working" (rect 312 824 348 836)(font "Arial" ))
 	(pt 360 840)
 	(pt 304 840)
@@ -1414,6 +1442,55 @@ applicable agreement for further details.
 	(pt 840 -328)
 	(bus)
 )
+(connector
+	(text "clr" (rect 960 808 971 820)(font "Arial" ))
+	(pt 952 824)
+	(pt 1008 824)
+)
+(connector
+	(text "_ICB[8]" (rect 960 776 997 788)(font "Arial" ))
+	(pt 952 792)
+	(pt 1008 792)
+)
+(connector
+	(text "working, gnd[21..0], jump, instr[39..32], pc_or_high[15..0], next_or_low[15..0]" (rect 674 760 1052 772)(font "Arial" ))
+	(pt 1008 776)
+	(pt 664 776)
+	(bus)
+)
+(connector
+	(pt 336 1032)
+	(pt 336 1016)
+)
+(connector
+	(text "instr[39]" (rect 291 1000 331 1012)(font "Arial" ))
+	(pt 336 1016)
+	(pt 280 1016)
+)
+(connector
+	(text "curr[13..0]" (rect 783 -80 833 -68)(font "Arial" ))
+	(pt 696 -64)
+	(pt 960 -64)
+	(bus)
+)
+(connector
+	(text "gnd[1..0], curr[13..0]" (rect 168 1040 269 1052)(font "Arial" ))
+	(pt 152 1056)
+	(pt 280 1056)
+	(bus)
+)
+(connector
+	(text "instr[31..16]" (rect 183 1072 242 1084)(font "Arial" ))
+	(pt 280 1088)
+	(pt 152 1088)
+	(bus)
+)
+(connector
+	(text "pc_or_high[15..0]" (rect 400 1056 484 1068)(font "Arial" ))
+	(pt 392 1072)
+	(pt 504 1072)
+	(bus)
+)
 (junction (pt 264 -176))
 (junction (pt 696 304))
 (junction (pt 960 -64))
@@ -1427,7 +1504,9 @@ applicable agreement for further details.
 (text "INSTRUCTION POINTER" (rect -16 -208 114 -194)(font "Arial" (font_size 8)))
 (text "SELECT 16 LOW BITS" (rect -16 664 107 678)(font "Arial" (font_size 8)))
 (text "FORM AND LATCH OUTGOING INSTRUCTION" (rect 688 664 944 678)(font "Arial" (font_size 8)))
+(text "SELECT 16 HIGH BITS" (rect -16 1008 107 1022)(font "Arial" (font_size 8)))
 (rectangle (rect -56 -616 1320 -264))
 (rectangle (rect -56 -232 1320 608))
 (rectangle (rect -56 640 616 960))
 (rectangle (rect 648 640 1320 960))
+(rectangle (rect -56 984 616 1200))

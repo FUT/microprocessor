@@ -88,7 +88,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 888 232 1073 248)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "CB_convey[15..0]" (rect 90 0 180 12)(font "Arial" ))
+	(text "CB_convey[20..0]" (rect 90 0 180 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 56 4)(pt 78 4)(line_width 1))
@@ -408,7 +408,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 224 256 416 304))
 )
 (symbol
-	(rect 288 752 352 800)
+	(rect 312 768 376 816)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst17" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -440,7 +440,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 288 1136 352 1184)
+	(rect 312 1144 376 1192)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst18" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -528,7 +528,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 240 1152 288 1184)
+	(rect 264 1160 312 1192)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst20" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -734,6 +734,54 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20)(line_width 1))
 	)
 )
+(symbol
+	(rect 312 736 360 768)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst10" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16)(line_width 1))
+		(line (pt 14 25)(pt 14 7)(line_width 1))
+		(line (pt 14 25)(pt 32 16)(line_width 1))
+	)
+)
+(symbol
+	(rect 312 1112 360 1144)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst23" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16)(line_width 1))
+		(line (pt 14 25)(pt 14 7)(line_width 1))
+		(line (pt 14 25)(pt 32 16)(line_width 1))
+	)
+)
 (connector
 	(pt 272 384)
 	(pt 264 384)
@@ -821,36 +869,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "p[1]" (rect 224 752 242 764)(font "Arial" ))
-	(pt 208 768)
-	(pt 288 768)
-)
-(connector
-	(text "CB_convey[10]" (rect 446 1144 523 1156)(font "Arial" ))
-	(pt 352 1160)
-	(pt 520 1160)
-)
-(connector
-	(text "CB_convey[9]" (rect 462 760 533 772)(font "Arial" ))
-	(pt 352 776)
-	(pt 536 776)
-)
-(connector
-	(text "CB_convey[4]" (rect 192 768 263 780)(font "Arial" ))
-	(pt 176 784)
-	(pt 288 784)
-)
-(connector
-	(text "p[3]" (rect 232 1136 250 1148)(font "Arial" ))
-	(pt 176 1152)
-	(pt 288 1152)
-)
-(connector
-	(text "CB_convey[4]" (rect 144 1152 215 1164)(font "Arial" ))
-	(pt 128 1168)
-	(pt 240 1168)
-)
-(connector
 	(pt 264 384)
 	(pt 264 336)
 	(bus)
@@ -882,12 +900,6 @@ applicable agreement for further details.
 	(text "p[5]" (rect 100 376 118 388)(font "Arial" ))
 	(pt 160 392)
 	(pt 72 392)
-)
-(connector
-	(text "CB_convey[15..0]" (rect 779 224 869 236)(font "Arial" ))
-	(pt 736 240)
-	(pt 888 240)
-	(bus)
 )
 (connector
 	(text "CB_convey[14]" (rect 336 1328 413 1340)(font "Arial" ))
@@ -1009,9 +1021,81 @@ applicable agreement for further details.
 	(pt 408 160)
 	(pt 456 160)
 )
+(connector
+	(text "CB_convey[4]" (rect 216 784 287 796)(font "Arial" ))
+	(pt 200 800)
+	(pt 312 800)
+)
+(connector
+	(text "CB_convey[9]" (rect 486 776 557 788)(font "Arial" ))
+	(pt 376 792)
+	(pt 560 792)
+)
+(connector
+	(pt 312 752)
+	(pt 296 752)
+)
+(connector
+	(pt 296 752)
+	(pt 296 784)
+)
+(connector
+	(text "p[1]" (rect 248 768 266 780)(font "Arial" ))
+	(pt 232 784)
+	(pt 296 784)
+)
+(connector
+	(pt 296 784)
+	(pt 312 784)
+)
+(connector
+	(text "CB_convey[16]" (rect 470 736 547 748)(font "Arial" ))
+	(pt 360 752)
+	(pt 544 752)
+)
+(connector
+	(text "CB_convey[10]" (rect 470 1152 547 1164)(font "Arial" ))
+	(pt 376 1168)
+	(pt 544 1168)
+)
+(connector
+	(text "CB_convey[4]" (rect 168 1160 239 1172)(font "Arial" ))
+	(pt 152 1176)
+	(pt 264 1176)
+)
+(connector
+	(pt 312 1128)
+	(pt 296 1128)
+)
+(connector
+	(pt 296 1128)
+	(pt 296 1160)
+)
+(connector
+	(text "p[3]" (rect 256 1144 274 1156)(font "Arial" ))
+	(pt 200 1160)
+	(pt 296 1160)
+)
+(connector
+	(pt 296 1160)
+	(pt 312 1160)
+)
+(connector
+	(text "CB_convey[17]" (rect 454 1112 531 1124)(font "Arial" ))
+	(pt 360 1128)
+	(pt 528 1128)
+)
+(connector
+	(text "CB_convey[20..0]" (rect 779 224 869 236)(font "Arial" ))
+	(pt 736 240)
+	(pt 888 240)
+	(bus)
+)
 (junction (pt 280 1608))
 (junction (pt 192 1472))
 (junction (pt 208 1456))
+(junction (pt 296 784))
+(junction (pt 296 1160))
 (text "CONVEY READY" (rect 64 80 161 94)(font "Arial" (font_size 8)))
 (text "ITERATOR" (rect 72 264 131 278)(font "Arial" (font_size 8)))
 (text "2) FIX INSTRUCTIONS ADDRESS AND STORE BAD PREDICTION FLAG" (rect 56 872 451 886)(font "Arial" (font_size 8)))
