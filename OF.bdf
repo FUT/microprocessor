@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 8 800 197 816)
+	(rect 80 800 269 816)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "latched_cmd[63..0]" (rect 90 0 184 12)(font "Arial" ))
 	(pt 0 8)
@@ -392,37 +392,6 @@ applicable agreement for further details.
 		(line (pt 14 25)(pt 32 16)(line_width 1))
 	)
 	(flipx)
-)
-(symbol
-	(rect 136 -296 248 -248)
-	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
-	(text "inst12" (rect 3 37 32 49)(font "Arial" ))
-	(port
-		(pt 112 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
-		(line (pt 64 32)(pt 112 32)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"0"
-		"Unsigned value to which outputs will be set"
-		(type "PARAMETER_UNSIGNED_DEC")	)
-	(parameter
-		"LPM_WIDTH"
-		"8"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-	)
-	(drawing
-		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
-		(line (pt 16 24)(pt 64 24)(line_width 1))
-		(line (pt 16 40)(pt 64 40)(line_width 1))
-		(line (pt 64 40)(pt 64 24)(line_width 1))
-		(line (pt 16 40)(pt 16 24)(line_width 1))
-	)
-	(annotation_block (parameter)(rect -56 -296 136 -248))
 )
 (symbol
 	(rect 616 424 792 584)
@@ -1219,37 +1188,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -104 1024 8 1072)
-	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
-	(text "inst7" (rect 3 37 26 49)(font "Arial" ))
-	(port
-		(pt 112 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
-		(line (pt 64 32)(pt 112 32)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"8"
-		"Unsigned value to which outputs will be set"
-	)
-	(parameter
-		"LPM_WIDTH"
-		"4"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-	)
-	(drawing
-		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
-		(line (pt 16 24)(pt 64 24)(line_width 1))
-		(line (pt 16 40)(pt 64 40)(line_width 1))
-		(line (pt 64 40)(pt 64 24)(line_width 1))
-		(line (pt 16 40)(pt 16 24)(line_width 1))
-	)
-	(annotation_block (parameter)(rect -104 976 8 1024))
-)
-(symbol
 	(rect 216 1040 264 1072)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst13" (rect 3 21 32 33)(font "Arial" ))
@@ -1406,6 +1344,68 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 160 112)(line_width 1))
 	)
 )
+(symbol
+	(rect -104 1024 8 1072)
+	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
+	(text "inst7" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"7"
+		"Unsigned value to which outputs will be set"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"4"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 64 40)(line_width 1))
+		(line (pt 64 40)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 16 24)(line_width 1))
+	)
+	(annotation_block (parameter)(rect -104 976 8 1024))
+)
+(symbol
+	(rect 136 -296 248 -248)
+	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
+	(text "inst12" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"2"
+		"Unsigned value to which outputs will be set"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_WIDTH"
+		"8"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 64 40)(line_width 1))
+		(line (pt 64 40)(pt 64 24)(line_width 1))
+		(line (pt 16 40)(pt 16 24)(line_width 1))
+	)
+	(annotation_block (parameter)(rect -56 -296 136 -248))
+)
 (connector
 	(pt 216 344)
 	(pt 216 512)
@@ -1419,17 +1419,6 @@ applicable agreement for further details.
 (connector
 	(pt 216 672)
 	(pt 128 672)
-	(bus)
-)
-(connector
-	(text "_AB[13..0]" (rect 225 515 237 566)(font "Arial" )(vertical))
-	(pt 216 512)
-	(pt 216 672)
-	(bus)
-)
-(connector
-	(pt 216 672)
-	(pt 216 808)
 	(bus)
 )
 (connector
@@ -1619,35 +1608,13 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS418>>" (rect 272 1040 390 1052)(font "Arial" )(invisible))
 	(pt 264 1056)
 	(pt 416 1056)
-)
-(connector
-	(text "_cmd_in[63]" (rect 357 1024 417 1036)(font "Arial" ))
-	(pt 416 1040)
-	(pt 328 1040)
 )
 (connector
 	(text "write_enable" (rect 488 1032 548 1044)(font "Arial" ))
 	(pt 480 1048)
 	(pt 576 1048)
-)
-(connector
-	(text "write_enable, _cmd[62..0]" (rect -103 792 23 804)(font "Arial" ))
-	(pt 8 808)
-	(pt -128 808)
-	(bus)
-)
-(connector
-	(pt -128 808)
-	(pt -128 824)
-	(bus)
-)
-(connector
-	(pt -128 672)
-	(pt -128 808)
-	(bus)
 )
 (connector
 	(pt 336 -416)
@@ -1698,24 +1665,6 @@ applicable agreement for further details.
 	(text "clr" (rect 88 -520 99 -508)(font "Arial" ))
 	(pt 136 -504)
 	(pt 80 -504)
-)
-(connector
-	(text "_cmd[38]" (rect -106 -400 -60 -388)(font "Arial" ))
-	(pt -128 -384)
-	(pt 272 -384)
-	(bus)
-)
-(connector
-	(text "_cmd[37]" (rect -106 -328 -60 -316)(font "Arial" ))
-	(pt -128 -312)
-	(pt 272 -312)
-	(bus)
-)
-(connector
-	(text "_cmd[36]" (rect -106 -256 -60 -244)(font "Arial" ))
-	(pt -128 -240)
-	(pt 272 -240)
-	(bus)
 )
 (connector
 	(text "_cmd_in[63..0]" (rect 55 -568 128 -556)(font "Arial" ))
@@ -1932,6 +1881,56 @@ applicable agreement for further details.
 (connector
 	(pt 1216 344)
 	(pt 1216 424)
+	(bus)
+)
+(connector
+	(text "_AB[13..0]" (rect 225 515 237 566)(font "Arial" )(vertical))
+	(pt 216 512)
+	(pt 216 672)
+	(bus)
+)
+(connector
+	(pt 216 672)
+	(pt 216 712)
+	(bus)
+)
+(connector
+	(pt -128 672)
+	(pt -128 808)
+	(bus)
+)
+(connector
+	(pt -128 808)
+	(pt -128 824)
+	(bus)
+)
+(connector
+	(text "_cmd[63]" (rect 357 1024 403 1036)(font "Arial" ))
+	(pt 416 1040)
+	(pt 328 1040)
+)
+(connector
+	(text "write_enable, _cmd[62..0]" (rect -111 792 15 804)(font "Arial" ))
+	(pt -128 808)
+	(pt 80 808)
+	(bus)
+)
+(connector
+	(text "_cmd_in[38]" (rect -106 -400 -46 -388)(font "Arial" ))
+	(pt -128 -384)
+	(pt 272 -384)
+	(bus)
+)
+(connector
+	(text "_cmd_in[37]" (rect -106 -328 -46 -316)(font "Arial" ))
+	(pt -128 -312)
+	(pt 272 -312)
+	(bus)
+)
+(connector
+	(text "_cmd_in[36]" (rect -106 -256 -46 -244)(font "Arial" ))
+	(pt -128 -240)
+	(pt 272 -240)
 	(bus)
 )
 (junction (pt 368 344))

@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 -16 240 0)
+	(rect 56 -16 224 0)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "run" (rect 5 0 20 12)(font "Arial" ))
 	(pt 168 8)
@@ -318,38 +318,6 @@ applicable agreement for further details.
 		(line (pt 104 102)(pt 104 16)(line_width 1))
 	)
 	(annotation_block (parameter)(rect 456 -152 616 -96))
-)
-(symbol
-	(rect 376 -24 440 24)
-	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst13" (rect 3 37 32 49)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16)(line_width 1))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32)(line_width 1))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24)(line_width 1))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12)(line_width 1))
-		(line (pt 14 37)(pt 31 37)(line_width 1))
-		(line (pt 14 12)(pt 14 37)(line_width 1))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
-	)
 )
 (symbol
 	(rect 944 88 1112 248)
@@ -1254,23 +1222,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 240 -8)
-	(pt 376 -8)
-)
-(connector
-	(pt 456 -8)
-	(pt 448 -8)
-)
-(connector
-	(pt 440 0)
-	(pt 448 0)
-)
-(connector
-	(text "cmd[63]" (rect 320 -8 360 4)(font "Arial" ))
-	(pt 304 8)
-	(pt 376 8)
-)
-(connector
 	(text "clr" (rect 232 176 243 188)(font "Arial" ))
 	(pt 224 192)
 	(pt 296 192)
@@ -1320,16 +1271,6 @@ applicable agreement for further details.
 (connector
 	(pt 704 -192)
 	(pt 704 1576)
-	(bus)
-)
-(connector
-	(pt 304 -24)
-	(pt 304 8)
-	(bus)
-)
-(connector
-	(pt 304 8)
-	(pt 304 64)
 	(bus)
 )
 (connector
@@ -2063,14 +2004,6 @@ applicable agreement for further details.
 	(pt 840 120)
 )
 (connector
-	(pt 448 -8)
-	(pt 448 0)
-)
-(connector
-	(pt 448 0)
-	(pt 448 184)
-)
-(connector
 	(pt 880 136)
 	(pt 944 136)
 )
@@ -2094,8 +2027,24 @@ applicable agreement for further details.
 	(pt 1112 120)
 	(bus)
 )
+(connector
+	(pt 304 -24)
+	(pt 304 64)
+	(bus)
+)
+(connector
+	(pt 448 -8)
+	(pt 448 184)
+)
+(connector
+	(pt 448 -8)
+	(pt 456 -8)
+)
+(connector
+	(pt 224 -8)
+	(pt 448 -8)
+)
 (junction (pt 304 -24))
-(junction (pt 304 8))
 (junction (pt 720 840))
 (junction (pt 1352 672))
 (junction (pt 752 704))
@@ -2146,14 +2095,15 @@ applicable agreement for further details.
 (junction (pt 720 2024))
 (junction (pt 704 2040))
 (junction (pt 688 2136))
-(junction (pt 448 0))
 (junction (pt 1400 88))
 (junction (pt 1120 120))
+(junction (pt 448 -8))
 (text "ALL BLOCKS ARE READY" (rect 1384 -96 1535 -82)(font "Arial" (font_size 8)))
 (text "TEMP FLAG" (rect 864 -8 931 6)(font "Arial" (font_size 8)))
 (text "STACK" (rect 816 344 857 358)(font "Arial" (font_size 8)))
 (text "STACK OPERATIONS" (rect 808 576 929 590)(font "Arial" (font_size 8)))
 (text "FLAG DEPENDENT OPERATIONS" (rect 800 976 985 990)(font "Arial" (font_size 8)))
+(text "s" (rect 200 56 207 70)(font "Arial" (font_size 8)))
 (rectangle (rect 784 -40 1296 296))
 (rectangle (rect 784 328 1296 520))
 (rectangle (rect 784 552 1296 936))

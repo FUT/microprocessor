@@ -1381,15 +1381,6 @@ applicable agreement for further details.
 	(pt 1560 896)
 )
 (connector
-	(text "<<__$DEF_ALIAS543>>" (rect 1471 848 1589 860)(font "Arial" )(invisible))
-	(pt 1152 864)
-	(pt 1560 864)
-)
-(connector
-	(pt 1152 672)
-	(pt 1152 864)
-)
-(connector
 	(pt 1472 968)
 	(pt 1560 968)
 	(bus)
@@ -1476,11 +1467,6 @@ applicable agreement for further details.
 	(pt 912 688)
 )
 (connector
-	(text "CB_convey[1]" (rect 1176 656 1247 668)(font "Arial" ))
-	(pt 1152 672)
-	(pt 1232 672)
-)
-(connector
 	(pt 1472 816)
 	(pt 1560 816)
 	(bus)
@@ -1504,10 +1490,6 @@ applicable agreement for further details.
 	(pt 881 672)
 	(pt 912 672)
 	(bus)
-)
-(connector
-	(pt 1136 672)
-	(pt 1152 672)
 )
 (connector
 	(text "DMAB[0]" (rect 1199 752 1242 764)(font "Arial" ))
@@ -1624,12 +1606,6 @@ applicable agreement for further details.
 	(pt 1848 832)
 )
 (connector
-	(text "to_of[63..60], to_of[39..36], flags[7..0], res[15..0], latched_addresses[31..0]" (rect 1407 1064 1784 1076)(font "Arial" ))
-	(pt 208 1080)
-	(pt 1888 1080)
-	(bus)
-)
-(connector
 	(text "CB_convey[6]" (rect 1791 896 1862 908)(font "Arial" ))
 	(pt 1784 912)
 	(pt 1864 912)
@@ -1743,6 +1719,30 @@ applicable agreement for further details.
 	(pt 2048 816)
 	(pt 1784 816)
 	(bus)
+)
+(connector
+	(text "latched_addresses[63..60], to_of[39..36], flags[7..0], res[15..0], latched_addresses[31..0]" (rect 1407 1064 1850 1076)(font "Arial" ))
+	(pt 208 1080)
+	(pt 1888 1080)
+	(bus)
+)
+(connector
+	(pt 1152 672)
+	(pt 1152 864)
+)
+(connector
+	(pt 1136 672)
+	(pt 1152 672)
+)
+(connector
+	(text "CB_convey[1]" (rect 1176 656 1247 668)(font "Arial" ))
+	(pt 1152 672)
+	(pt 1232 672)
+)
+(connector
+	(text "<<__$DEF_ALIAS543>>" (rect 1479 848 1597 860)(font "Arial" )(invisible))
+	(pt 1152 864)
+	(pt 1560 864)
 )
 (junction (pt 2032 1656))
 (junction (pt 2016 1672))
