@@ -24,6 +24,29 @@ HEADER
 {
 	VERSION = 1;
 	TIME_UNIT = ns;
+	PAGE_SETUP = "header_footer\
+Date: %D\
+%f\
+Project: %j\
+\
+Page %p of %P\
+Revision: %a\
+margin\
+1\
+1\
+1\
+1\
+orientation\
+1\
+paper_size\
+1\
+paper_source\
+15\
+fit_page_wide\
+1\
+fit_page_tall\
+1\
+";
 	DATA_OFFSET = 0.0;
 	DATA_DURATION = 15000.0;
 	SIMULATION_TIME = 0.0;
