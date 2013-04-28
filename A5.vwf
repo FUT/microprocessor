@@ -142,14 +142,23 @@ SIGNAL("should_have_jumped")
 	PARENT = "";
 }
 
+SIGNAL("enable")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("clr")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 960.0;
+		LEVEL 0 FOR 990.0;
 	}
 }
 
@@ -158,11 +167,7 @@ TRANSITION_LIST("curr[1]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL X FOR 1000.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -171,11 +176,7 @@ TRANSITION_LIST("curr[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL X FOR 1000.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -184,7 +185,7 @@ TRANSITION_LIST("get_next")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 10.0;
@@ -204,7 +205,7 @@ TRANSITION_LIST("get_next")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 450.0;
+		LEVEL 0 FOR 480.0;
 	}
 }
 
@@ -213,7 +214,7 @@ TRANSITION_LIST("latch_current")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 90.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 10.0;
@@ -233,7 +234,7 @@ TRANSITION_LIST("latch_current")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 440.0;
+		LEVEL 0 FOR 470.0;
 	}
 }
 
@@ -242,11 +243,7 @@ TRANSITION_LIST("nxt[1]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL X FOR 1000.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -255,11 +252,7 @@ TRANSITION_LIST("nxt[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL X FOR 1000.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -268,11 +261,7 @@ TRANSITION_LIST("prediction")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL X FOR 1000.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -281,13 +270,22 @@ TRANSITION_LIST("should_have_jumped")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 90.0;
 		LEVEL 1 FOR 100.0;
 		LEVEL 0 FOR 100.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 550.0;
+		LEVEL 0 FOR 580.0;
+	}
+}
+
+TRANSITION_LIST("enable")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -393,6 +391,15 @@ DISPLAY_LINE
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "enable";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 11;
 	TREE_LEVEL = 0;
 }
 

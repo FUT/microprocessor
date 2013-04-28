@@ -658,11 +658,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "flg[0]" (rect 647 632 659 657)(font "Arial" )(vertical))
-	(pt 664 544)
-	(pt 664 688)
-)
-(connector
 	(pt 640 160)
 	(pt 640 192)
 )
@@ -707,6 +702,11 @@ applicable agreement for further details.
 	(text "run" (rect 769 816 784 828)(font "Arial" ))
 	(pt 744 832)
 	(pt 800 832)
+)
+(connector
+	(text "flg[1]" (rect 646 631 658 656)(font "Arial" )(vertical))
+	(pt 664 544)
+	(pt 664 688)
 )
 (junction (pt 640 192))
 (junction (pt 416 256))
